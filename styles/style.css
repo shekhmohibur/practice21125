@@ -369,9 +369,106 @@ main{
     color:#fff;
     font-weight: 300;
 }
-.overlay-text{
-
+/* bmi-calculator section here  */
+.calculator-info{
+    max-width: 671px;
+    margin: 88px auto;
+    padding: 0 20px;
 }
+.calculator-info .primary-heading, .primary-text{
+    text-align: left;
+}
+.calculator-info .primary-text{
+    text-align: left;
+    line-height: 24px;
+}
+.calculate-bmi{
+    max-width: 1064px;
+    margin: 0 auto;
+    display: flex;
+    gap: 175px;
+    padding: 52px 20px;
+}
+.bmi-bg{
+    background: rgb(34, 34, 34);
+}
+.bmi-heading{
+    color: rgb(255, 255, 255);
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+.calculate-bmi table{
+    width: 310px;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 52px;
+}
+.calculate-bmi th{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.calculate-bmi th, td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px;
+}
+.calculate-bmi td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.125rempx;
+    font-weight: 400;
+}
+.get-bmi .primary-text{
+    line-height: 24px;
+    margin-bottom: 34px;
+}
+.get-bmi input{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 40px 12px 20px;
+    border: none;
+    outline: none;
+    color: #FFFFFF99;
+}
+.get-bmi form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "height weight"
+    "age gender"
+    "factor factor"
+    "formButton formButton";
+    gap: 12px;
+}
+.get-bmi input:nth-child(1){
+    grid-area: height;
+}
+.get-bmi input:nth-child(2){
+    grid-area: weight;
+}
+.get-bmi input:nth-child(3){
+    grid-area: age;
+}
+.get-bmi select{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 40px 12px 20px;
+    border: none;
+    outline: none;
+    color: #FFFFFF99;
+}
+.get-bmi #gender{
+    grid-area: gender;
+}
+.get-bmi #factor{
+    grid-area: factor;
+    grid-column: 1 / span 2;
+}
+.get-bmi form button{
+    grid-area: formButton;
+    margin-top: 34px;
+    grid-column: 1;
+}
+
 /* main styles are here  */
 /* footer styles are here  */
 /* footer styles are here  */
@@ -448,6 +545,10 @@ main{
     .gallery-grid-2 .gallery-item:nth-child(3) .gallery-overlay{
         display: none;
     }
+    .calculate-bmi{
+        flex-direction: column;
+        gap: 62px;
+    }
 }
 /* responsive for medium devices  */
 @media screen and (min-width:577px) and (max-width:1270px) {
@@ -486,6 +587,10 @@ main{
     .gallery-grid-2{
         display: grid;
         grid-template-columns:40% 1fr 1fr;
+    }
+    .calculate-bmi{
+        flex-direction: column;
+        gap: 62px;
     }
 }
 /* responsive styles are here  */
