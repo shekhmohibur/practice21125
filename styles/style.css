@@ -106,7 +106,7 @@ header{
     position: relative;
 }
 .banner-img{
-    width: fit-content%;
+    width: fit-content;
     transform: translateX(50%);
 }
 .card-tutorial{
@@ -183,7 +183,7 @@ header{
 /* footer styles are here  */
 /* responsive styles are here  */
 /* responsive for medium devieces  */
-@media screen and (min-width:577px) and (max-width:1087px) {
+@media screen and (min-width:735px) and (max-width:1087px) {
     .banner-container{
         flex-direction: column;
         gap: 400px;
