@@ -188,6 +188,190 @@ header{
 }
 /* header styles are here  */
 /* main styles are here  */
+/* habit section styles here  */
+main{
+    background: rgb(19, 19, 19);
+}
+.habit-container{
+    max-width: 1044px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+     gap: 100px;
+}
+.change-habit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.primary-heading{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    text-align:center;
+}
+.primary-text{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    text-align:center;
+}
+.habit-text{
+    margin: 14px 0 57px 0;
+}
+.habit-rules{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px ;
+}
+.habit-rule{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.rules-img{
+    border-radius: 50%;
+    width: fit-content;
+}
+.rule-heading{
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 30px 0 6px 0;
+}
+/* habit section ends here  */
+/* run-extra section here  */
+.run-extra{
+    max-width: 1060px;
+    display: flex;
+    justify-content: space-between;
+    gap: 165px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    padding: 30px 32px;
+}
+.run-extra-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+.run-extra-info .primary-heading, .primary-text{
+    text-align: left;
+}
+.run-extra-info .primary-text{
+    line-height: 24px;
+}
+.running-img{
+    overflow: hidden;
+    border-radius: 18px;
+    max-width: 366px;
+    margin: 0 auto;
+}
+.running-img img{
+    width: 100%; 
+    transform: scale(3.5);
+    transform-origin: 70% 30%;
+}
+.run-extra-info button{
+    margin-top: 50px;
+}
+/* training-excercise section styles  */
+.training-excercise{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.training-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 0 20px;
+}
+.training-container .primary-heading, .primary-text{
+    text-align: left;
+}
+.training-container .primary-text{
+    margin: 14px 0 58px 0;
+    max-width: 671px;
+}
+.training-gallery{
+    display: flex;
+    flex-direction: column;
+}
+.gallery-grid-1{
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+}
+.gallery-grid-2{
+    display: grid;
+    grid-template-columns:50% 1fr 1fr;
+}
+.gallery-item{
+    position: relative;
+}
+.gallery-item .gallery-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.gallery-grid-1 .gallery-item:nth-child(1) .gallery-overlay{
+    background: rgba(6, 255, 210, 0.5);
+    width: 100%;
+    height: 100%;
+    color:#242424;
+    font-weight: 300;
+}
+.gallery-grid-1 .gallery-item:nth-child(2) .gallery-overlay{
+    background: rgba(255, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    font-weight: 300;
+}
+.gallery-grid-1 .gallery-item:nth-child(3) .gallery-overlay{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    font-weight: 300;
+}
+.gallery-grid-2 .gallery-item:nth-child(1) .gallery-overlay{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    font-weight: 300;
+}
+.gallery-grid-2 .gallery-item:nth-child(2) .gallery-overlay{
+    background: rgba(66, 255, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    font-weight: 300;
+}
+.gallery-grid-2 .gallery-item:nth-child(3) .gallery-overlay{
+    background: rgba(0, 71, 255, 0.3);
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    font-weight: 300;
+}
+.gallery-item img{
+    width: 100%;
+    object-fit: cover;
+    height: 195px;
+    color:#fff;
+    font-weight: 300;
+}
+.overlay-text{
+
+}
 /* main styles are here  */
 /* footer styles are here  */
 /* footer styles are here  */
@@ -221,7 +405,51 @@ header{
     .join-club, .download-app{
         font-size: 3vw;
     }
+    .habit-rules{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    .run-extra{
+        flex-direction: column;
+        gap: 31px;
+    }
+    .run-extra-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .running-img{
+        border-radius: 18px;
+        width: 100%;
+    }
+    .running-img img{
+        width: 100%; 
+        transform: none;
+        overflow: auto;
+    }
+    .run-extra-info .primary-text{
+        line-height: 24px;
+    }
+    .run-extra-info button{
+        margin-top: 0;
+        width: 100%;
+    }
+    .gallery-grid-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 0;
+    }
+    .gallery-grid-2{
+        display: grid;
+        grid-template-columns:45% 1fr 0;
+    }
+    .gallery-grid-1 .gallery-item:nth-child(3) .gallery-overlay{
+        display: none;
+    }
+    .gallery-grid-2 .gallery-item:nth-child(3) .gallery-overlay{
+        display: none;
+    }
 }
+/* responsive for medium devices  */
 @media screen and (min-width:577px) and (max-width:1270px) {
     .banner-container{
         flex-direction: column;
@@ -243,6 +471,21 @@ header{
     }
     .menu-bar{
         gap: 10px;
+    }
+    .habit-rules{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    .run-extra{
+        gap: 68px;
+    }
+    .gallery-grid-1{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .gallery-grid-2{
+        display: grid;
+        grid-template-columns:40% 1fr 1fr;
     }
 }
 /* responsive styles are here  */
