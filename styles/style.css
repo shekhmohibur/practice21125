@@ -63,6 +63,7 @@ header{
     column-gap: 14px;
     row-gap: 24px;
     height: 0;
+    margin-top: 97px;
 }
 .info-heading{
     color: rgb(255, 255, 255);
@@ -101,10 +102,12 @@ header{
     cursor: pointer;
 }
 .banner-image{
-    max-width: 536px;
+    max-width: 516px;
+    position: relative;
 }
 .banner-img{
-    width: 100%;
+    width: fit-content%;
+    transform: translateX(50%);
 }
 .card-tutorial{
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -117,6 +120,10 @@ header{
     justify-content: center;
     align-items: center;
     gap: 12px;
+    position: absolute;
+    left: 15%;
+    bottom: 63px;
+    z-index: 1;
 }
 .after-circle{
     display: flex;
@@ -164,6 +171,10 @@ header{
     justify-content: center;
     align-items: center;
     text-align: left;
+    position: absolute;
+    top: 150px;
+    left: 100%;
+    z-index: 1;
 }
 /* header styles are here  */
 /* main styles are here  */
@@ -171,4 +182,14 @@ header{
 /* footer styles are here  */
 /* footer styles are here  */
 /* responsive styles are here  */
+/* responsive for medium devieces  */
+@media screen and (min-width:577px) and (max-width:1087px) {
+    .banner-container{
+        flex-direction: column;
+        gap: 400px;
+    }
+    .banner-img{
+        width: fit-content;
+    }
+}
 /* responsive styles are here  */
