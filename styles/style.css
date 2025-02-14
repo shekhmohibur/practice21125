@@ -9,7 +9,7 @@ header{
     background: linear-gradient(180.00deg, rgb(18, 18, 18),rgb(31, 31, 31),rgb(17, 17, 17) 100%);
 }
 .header-container{
-    max-width: 1100px;
+    max-width: 1110px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -19,7 +19,7 @@ header{
 .nav-bar{
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 52px;
     align-items: center;
 }
 .brand{
@@ -28,11 +28,16 @@ header{
     font-size: 2.46rem;
     font-weight: 800;
     font-style: italic;
+    line-height: 120%;
 }
 .menu-bar{ 
     display: flex;
     list-style-type: none;
     gap: 40px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 10px;
 }
 .menu-link{
     text-decoration: none;
@@ -51,6 +56,7 @@ header{
 }
 .banner-container{
     display: flex;
+    gap: 54px;
 }
 .banner-info{
     max-width: 520px;
@@ -75,6 +81,7 @@ header{
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     font-weight: 400;
+    line-height: 24px;
     grid-area: infoBio;
 }
 .join-club{
@@ -106,7 +113,7 @@ header{
     position: relative;
 }
 .banner-img{
-    width: fit-content;
+    width: 100%;
     transform: translateX(50%);
 }
 .card-tutorial{
@@ -172,8 +179,8 @@ header{
     align-items: center;
     text-align: left;
     position: absolute;
-    top: 150px;
-    left: 100%;
+    top: 140px;
+    left: 120%;
     z-index: 1;
 }
 /* header styles are here  */
@@ -182,14 +189,54 @@ header{
 /* footer styles are here  */
 /* footer styles are here  */
 /* responsive styles are here  */
+/* responsive for mobile devices  */
+@media screen and (max-width:669px) {
+    .banner-container{
+        flex-direction: column;
+        gap: 800px;
+    }
+    .info-heading{
+        font-size: 2.25rem;
+        max-width: 285px;
+    }
+    .info-bio{
+        max-width: 274px;
+    }
+    .join-club .download-app{
+        font-size: 1.125rem;
+    }
+    .banner-info{
+        margin-left: 0px;
+    }
+    .banner-img{
+        width: fit-content;
+        position: relative;
+    }
+    .card-workout{
+        top: 90px;
+        left: 80%;
+    }
+    .menu-bar{
+        display: none;
+    }
+    .menu-icon{
+        display: flex;
+        color: white;
+        font-size: 1.5rem;
+    }
+}
 /* responsive for medium devieces  */
-@media screen and (min-width:735px) and (max-width:1087px) {
+@media screen and (min-width:670px) and (max-width:1087px) {
     .banner-container{
         flex-direction: column;
         gap: 450px;
     }
+    .banner-info{
+        margin-left: 60px;
+    }
     .banner-img{
         width: fit-content;
+        position: relative;
     }
     .card-workout{
         top: 90px;
