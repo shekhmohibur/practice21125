@@ -186,10 +186,14 @@ header{
 @media screen and (min-width:735px) and (max-width:1087px) {
     .banner-container{
         flex-direction: column;
-        gap: 400px;
+        gap: 450px;
     }
     .banner-img{
         width: fit-content;
+    }
+    .card-workout{
+        top: 90px;
+        left: 80%;
     }
 }
 /* responsive styles are here  */
