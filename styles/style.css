@@ -15,6 +15,9 @@ header{
 }
 .menu-icon{
     display: none;
+    font-size: 2.25rem;
+    color: white;
+    cursor: pointer;
 }
 .nav-bar{
     display: flex;
@@ -179,8 +182,8 @@ header{
     align-items: center;
     text-align: left;
     position: absolute;
-    top: 140px;
-    left: 120%;
+    top: 130px;
+    left: 390px;
     z-index: 1;
 }
 /* header styles are here  */
@@ -190,57 +193,56 @@ header{
 /* footer styles are here  */
 /* responsive styles are here  */
 /* responsive for mobile devices  */
-@media screen and (max-width:669px) {
-    .banner-container{
-        flex-direction: column;
-        gap: 800px;
-    }
-    .info-heading{
-        font-size: 2.25rem;
-        max-width: 285px;
-    }
-    .info-bio{
-        max-width: 274px;
-    }
-    .join-club .download-app{
-        font-size: 1.125rem;
-    }
-    .banner-info{
-        margin-left: 0px;
-    }
-    .banner-img{
-        width: fit-content;
-        position: relative;
-    }
-    .card-workout{
-        top: 90px;
-        left: 80%;
-    }
+@media screen and (max-width:576px) {
     .menu-bar{
         display: none;
     }
     .menu-icon{
         display: flex;
-        color: white;
-        font-size: 1.5rem;
+    }
+    .banner-container{
+        flex-direction: column;
+        gap: 630px;
+        align-items: center;
+    }
+    .banner-img{
+        transform: none;
+        width: fit-content;
+    }
+    .card-tutorial{
+        left: -10px;
+        width: 160px;
+    }
+    .card-workout{
+        width: 160px;
+        top: 60px;
+        left: 190px;
+    }
+    .join-club, .download-app{
+        font-size: 3vw;
     }
 }
-/* responsive for medium devieces  */
-@media screen and (min-width:670px) and (max-width:1087px) {
+@media screen and (min-width:577px) and (max-width:1270px) {
     .banner-container{
         flex-direction: column;
         gap: 450px;
     }
     .banner-info{
-        margin-left: 60px;
+        max-width: 700px;
     }
     .banner-img{
         width: fit-content;
-        position: relative;
     }
     .card-workout{
-        top: 90px;
-        left: 80%;
+        width: 160px;
+        left: 400px;
+        top: 70px;
+    }
+    .card-tutorial{
+        left: 150px;
+    }
+    .menu-bar{
+        gap: 10px;
     }
 }
 /* responsive styles are here  */
