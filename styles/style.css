@@ -468,11 +468,15 @@ main{
     margin-top: 34px;
     grid-column: 1;
 }
+.short-link-box{
+    display: flex;
+    gap: 182px;
+}
 /* team section styles are here  */
 .team{
     max-width: 1060px;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin:  auto;
+    padding: 88px 20px;
 }
 .team .primary-heading, .primary-text{
     max-width: 671px;
@@ -519,6 +523,55 @@ main{
 }
 /* main styles are here  */
 /* footer styles are here  */
+footer{
+    background: #242424;
+}
+.footer-container{
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 66px 0;
+}
+.about-brand{
+    max-width: 443px;
+}
+.about-brand .primary-text{
+    text-align: left;
+    line-height: 24px;
+    font-size: 0.875rem;
+}
+.footer-wrapper ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-heading{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 39px;
+}
+.footer-container a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.footer-container hr{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.policy{
+    margin: 0 auto;
+    display: block;
+    padding: 36px 0;
+
+}
 /* footer styles are here  */
 /* responsive styles are here  */
 /* responsive for mobile devices  */
@@ -601,6 +654,15 @@ main{
         grid-template-columns: repeat(1, 313px);
         justify-content: center;
     }
+    .footer-wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .short-link-box{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 /* responsive for medium devices  */
 @media screen and (min-width:577px) and (max-width:1270px) {
@@ -646,6 +708,14 @@ main{
     }
     .team-member img{
         max-width: 230px;
+    }
+    .team-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
     }
 }
 /* responsive styles are here  */
