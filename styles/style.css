@@ -462,13 +462,61 @@ main{
 .get-bmi #factor{
     grid-area: factor;
     grid-column: 1 / span 2;
-}
+}     
 .get-bmi form button{
     grid-area: formButton;
     margin-top: 34px;
     grid-column: 1;
 }
-
+/* team section styles are here  */
+.team{
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.team .primary-heading, .primary-text{
+    max-width: 671px;
+    text-align: center;
+    margin: 0 auto;
+}
+.team .primary-text{
+    line-height: 24px;
+}
+.team-member{
+    max-width: 327px;
+    position: relative;
+    max-height: 272px;
+    margin: 0 auto;
+}
+.team-member img{
+    width: 327px;
+    height: 100%;
+    border-radius: 18px;
+}
+.team-member .member-bio{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.team-member .member-name{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.team-member .member-qualification{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.team-container{
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    max-width: 1060px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
 /* main styles are here  */
 /* footer styles are here  */
 /* footer styles are here  */
@@ -549,6 +597,10 @@ main{
         flex-direction: column;
         gap: 62px;
     }
+    .team-container{
+        grid-template-columns: repeat(1, 313px);
+        justify-content: center;
+    }
 }
 /* responsive for medium devices  */
 @media screen and (min-width:577px) and (max-width:1270px) {
@@ -592,5 +644,6 @@ main{
         flex-direction: column;
         gap: 62px;
     }
+    
 }
 /* responsive styles are here  */
