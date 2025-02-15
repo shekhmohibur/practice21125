@@ -644,6 +644,8 @@ main{
         flex-direction: column;
         gap: 62px;
     }
-    
+    .team-member img{
+        max-width: 230px;
+    }
 }
 /* responsive styles are here  */
